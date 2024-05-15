@@ -1,0 +1,14 @@
+body {
+  background-color: #587792;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.card {
+  background-color: #ead7d1 !important;
+  border-radius: 35px;
+}
+
+ul {
+  background-color: #ead7d1 !important;
+  border-radius: 35px;
+}
