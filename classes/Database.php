@@ -25,8 +25,10 @@ class Database
 
 
 
+
     public function query($sql)
     {
+
         return $this->db->query($sql);
     }
 

@@ -25,18 +25,18 @@ $films = $database->read('film');
 ?>
 
 <?php include_once "includes/__header.php" ?>
-<div class="container">
+
+<div class="container my-5">
     <div class="text-center mt-5">
-        <h2>Benvenuto, <?php echo $_SESSION['username']; ?>!</h2>
-        <p>Questa è la tua dashboard.</p>
+        <h1 class="text-white display-1">BENVENUTO, <?php echo $_SESSION['username']; ?>!</h1>
+        <p style="color:lightgray;">Questa è la tua dashboard.</p>
 
 
     </div>
-
-    <h3 class="text-start">Film</h3>
-    <ul class="list-group">
+    <ul class="list-group p-5">
+        <h1 class="text-start">Film</h1>
         <?php foreach ($films as $film) : ?>
-            <li class="list-group-item ">
+            <li class="list-group-item pulse ">
                 <div class="row align-items-center">
                     <div class="col-8">
                         <div class="row">
@@ -59,7 +59,7 @@ $films = $database->read('film');
                                 <form method="post" action="delete_film.php">
 
                                     <input type="hidden" name="film_id" value="<?php echo $film['id']; ?>">
-                                    <button type="submit" class="btn btn-danger btn-sm ml-2">Elimina</button>
+                                    <button type="submit" class="btn btn-danger  btn-sm ml-2">Elimina</button>
                                 </form>
                             </div>
                         </div>
@@ -67,14 +67,14 @@ $films = $database->read('film');
                 </div>
             </li>
         <?php endforeach; ?>
-    </ul>
 
-    <div class="d-flex justify-content-between mt-3">
-        <a href="add_film.php" class="btn btn-primary ">Aggiungi Film</a>
-        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-            <button type="submit" name="logout" class="btn btn-danger">Logout</button>
-        </form>
-    </div>
+        <div class="d-flex justify-content-between mt-3">
+            <a href="add_film.php" class="btn btn-primary  ">Aggiungi Film</a>
+            <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+                <button type="submit" name="logout" class="btn btn-danger swing">Logout</button>
+            </form>
+        </div>
+    </ul>
 </div>
 
 <?php include_once "includes/__footer.php" ?>

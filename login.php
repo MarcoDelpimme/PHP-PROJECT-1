@@ -31,14 +31,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <label class="form-label" for="password">Password:</label>
                 <input class="form-control" type="password" id="password" name="password" required>
             </div>
-            <button class="btn btn-info" type="submit">Login</button>
+            <button class="btn btn-info swing " type="submit">Login</button>
         </form>
         <div class="container mt-5">
             <div class="row align-items-center">
-                <div class="col-3 ms-auto">
+                <div class="col-auto ms-auto">
                     <h5 class="m-0">Non hai un account? </h5>
                 </div>
-                <div class="col-auto"><a href="register.php"><button class="btn btn-primary" type="submit">Registrati</button></a></div>
+                <div class="col-auto"><a href="register.php"><button class="btn btn-primary swing" type="submit">Registrati</button></a></div>
             </div>
         </div>
     </div>

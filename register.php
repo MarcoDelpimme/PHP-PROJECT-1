@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <label class="form-label" for="password">Password:</label>
                 <input class="form-control" type="password" id="password" name="password" required>
             </div>
-            <button class="btn btn-info mt-3" type="submit">Registrati</button>
+            <button class="btn btn-info mt-3 swing" type="submit">Registrati</button>
         </form>
     </div>
 </div>
